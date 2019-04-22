@@ -1,0 +1,93 @@
+Question 1
+
+Testing my PAD function on the first 10 Padovan numbers yields the correct 
+results as expected:
+
+[1]> (load "hw1.lsp")
+;; Loading file hw1.lsp ...
+;; Loaded file hw1.lsp
+T
+[2]> (PAD 0)
+1
+[3]> (PAD 1)
+1
+[4]> (PAD 2)
+1
+[5]> (PAD 3)
+2
+[6]> (PAD 4)
+2
+[7]> (PAD 5)
+3
+[8]> (PAD 6)
+4
+[9]> (PAD 7)
+5
+[10]> (PAD 8)
+7
+[11]> (PAD 9)
+9
+[12]> (PAD 10)
+12
+
+The function gets expontentially slower as the value of N increases, and 
+eventually hangs up for very large numbers of N (execution timed out at around
+N = 60 for me). This is due to the fact that my function computes the Padovan 
+numbers recursively by computing Padovan numbers smaller than N. As my function 
+doesn't use memoization, some Padovan numbers are constantly being recalculated. 
+
+
+Question 2
+
+Testing my SUMS function up to N = 10 yields the correct results as expected:
+
+[2]> (SUMS 0)
+0
+[3]> (SUMS 1)
+0
+[4]> (SUMS 2)
+0
+[5]> (SUMS 3)
+1
+[6]> (SUMS 4)
+1
+[7]> (SUMS 5)
+2
+[8]> (SUMS 6)
+3
+[9]> (SUMS 7)
+4
+[10]> (SUMS 8)
+6
+[11]> (SUMS 9)
+8
+[12]> (SUMS 10)
+11
+
+The relationship between values returned by PAD and SUMS is that the Nth SUMS
+result has a value of one less than the Nth PAD result. This is due to the fact
+that the PAD function boils down to the summation of a number of ones. In the 
+smallest case (i.e. PAD 3 or PAD 4), it is the summation of two 1's; and thus, 
+a single addition. For PAD 5, it is the summation of three 1's; and thus, two
+additions, and so on for each N. 
+
+
+Question 3
+
+Testing my ANON function for the examples provided yields the correct results as
+expected:
+
+[2]> (ANON '42)
+?
+[3]> (ANON 'FOO)
+?
+[4]> (ANON '(((L E) F) T))
+(((? ?) ?) ?)
+[5]> (ANON '(5 FOO 3.1 -0.2))
+(? ? ? ?)
+[6]> (ANON '(1 (FOO 3.1) -0.2))
+(? (? ?) ?)
+[7]> (ANON '(((1 2) (FOO 3.1)) (BAR -0.2)))
+(((? ?) (? ?)) (? ?))
+[8]> (ANON '(R (I (G (H T)))))
+(? (? (? (? ?))))
