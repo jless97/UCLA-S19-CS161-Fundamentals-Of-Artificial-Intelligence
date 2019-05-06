@@ -1,4 +1,4 @@
-# CS161, Fundamentals of Artificial Intelligence, Spring 2019
+# CS161, Fundamentals of Artificial Intelligence, Spring 2019 
 
 ## Course Description
 This course studies the design of intelligent agents. It introduces the fundamental problem-solving and knowledge-representation paradigms of artificial intelligence. We will study the AI programming language LISP, state-space and problem reduction methods, brute-force and heuristic search, planning techniques, two-player games, and recent developments in game AI. In knowledge representation and reasoning, we will cover propositional and first-order logic and their inference algorithms. Finally, the course covers probabilistic approaches to AI, such as Bayesian networks, and machine learning algorithms to improve the agent's performance with experience.
