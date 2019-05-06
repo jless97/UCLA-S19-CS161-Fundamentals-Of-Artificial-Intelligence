@@ -1,0 +1,31 @@
+Question 1
+
+Testing my FRINGE function on the examples provided yields the correct results
+as expected:
+
+[2]> (BFS '(ROOT))
+(ROOT)
+[3]> (BFS '((((L E) F) T)))
+(T F L E)
+[4]> (BFS '((R (I (G (H T))))))
+(R I G H T)
+[5]> (BFS '(((A (B)) C (D))))
+(C A D B)
+[6]> (BFS '((T (H R E) E)))
+(T E H R E)
+[7]> (BFS '((A ((C ((E) D)) B))))
+(A B C D E)
+
+
+Question 2
+
+Testing my DFS function from the start state yields the expected result:
+
+[8]> (DFS '(nil nil nil nil) nil)
+((NIL NIL NIL NIL) (T T NIL NIL) (NIL T NIL NIL) (T T T NIL) (NIL NIL T NIL) 
+(T NIL T T) (NIL NIL T T) (T T T T))
+
+Testing my DFS function from the fourth state yields the expected result:
+[9]> (DFS '(T T T nil) '((nil nil nil nil) (T T nil nil) (nil T nil nil)))
+((NIL NIL NIL NIL) (T T NIL NIL) (NIL T NIL NIL) (T T T NIL) (NIL NIL T NIL) 
+(T NIL T T) (NIL NIL T T) (T T T T))

@@ -1,7 +1,13 @@
-;;; Question 1
+;;;;;;;;;;;;;;
+; Homework 1 ;
+;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;
+; Question 1 ;
+;;;;;;;;;;;;;;
 
 ;; Function PAD takes a single arg N and returns the Nth Padovan number
-; Explanation: ecursively generates the Nth Padovan number
+; Explanation: Recursively generates the Nth Padovan number
 (defun PAD (N)
   (if (or (= N 0) (= N 1) (= N 2))
     1
@@ -10,7 +16,9 @@
 )
 
 
-;;; Question 2
+;;;;;;;;;;;;;;
+; Question 2 ;
+;;;;;;;;;;;;;;
 
 ;; Function SUMS takes a single arg N and returns the number of additions 
 ;; required by the PAD function to compute the Nth Padovan number
@@ -23,7 +31,9 @@
 )
 
 
-;;; Question 3
+;;;;;;;;;;;;;;
+; Question 3 ;
+;;;;;;;;;;;;;;
 
 ;; Function ANON takes a single argument TREE that represents a tree, and 
 ;; returns an anonymized tree with the same structure, but where all symbols 
