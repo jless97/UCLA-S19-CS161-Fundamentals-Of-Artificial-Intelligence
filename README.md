@@ -13,3 +13,9 @@ Programming Language: Lisp
   * Implemented a depth-first solver to solve a variation of the famous Fox, Goose, and Bag of Beans Puzzle (Homer, Baby, Dog, and Poison Problem from the Simpsons)
 * H3 - Sokoban
   * Implemented the main components of a program to play the well-known puzzle video game Sokoban first introduced in Japan in 1980
+* H4 - SAT Solver
+  * Lisp program that converts graph coloring problems into SAT problems and uses a SAT solver to solve them
+* H5 - Propositional & First-Order Logic
+  * Non-coding assignment that dealt with propositional logic, first-order logic, converting both to CNF, and performing resolution to answer queries
+* H6 - Bayesian Networks
+  * Non-coding assignment that dealt with constructing Bayesian networks, and using them to answer probabilistic queries
